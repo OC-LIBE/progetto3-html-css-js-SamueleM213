@@ -1,1 +1,91 @@
-h1 color:red
+html, body{
+    margin: 0;
+    padding: 0;
+    font-style:normal;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    background-color: #ffffff;
+    cursor:no-drop
+
+}
+
+.titoli{
+    margin:0rem;
+    padding:  1.5rem;
+    text-align: center;
+    background: linear-gradient(to left, red, rgb(255, 251, 0));
+    color: rgb(255, 255, 255);    
+    position: relative;
+}
+
+p{
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin: 1rem;
+    padding: 0.1rem;
+}
+
+nav{
+    text-align: center
+}
+
+article{
+    margin: 1rem;
+    padding: 0;
+}
+
+nav button{
+    padding: 0.5rem 1rem;
+    margin: 0.1rem;
+    color: red;
+    border-radius: 0.5rem;
+    border-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav button:hover{
+    color: white;
+    border-color: orange;
+    background-color: red;
+    cursor:pointer;
+}
+
+nav button:{
+    color: white;
+    border-color: orange;
+    background-color: red;
+    cursor:no-drop;
+}
+
+
+header h1{
+    margin: 0;
+    font-weight:normal;
+    font-size: 3rem
+}
+
+header h2{
+    margin: 0;
+    font-weight:lighter;
+    font-size: 1rem
+}
+
+header:before{
+    content:"";
+    height: 0.7rem;
+    background: linear-gradient(to right,  red, rgb(255, 251, 0));
+    position: absolute;
+    top:0;
+    left:0;
+    right:0
+}
+
+header:after{
+    content:"";
+    height: 0.7rem;
+    background: linear-gradient(to right,  red, rgb(255, 251, 0));
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0
+}
