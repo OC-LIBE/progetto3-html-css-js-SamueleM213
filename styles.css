@@ -94,12 +94,11 @@ main article {
     border-radius: 0.5rem;
     flex-direction: row-reverse;
     overflow: hidden;
-    margin-bottom: 1rem
+    margin: 1rem 0
 }
 
 .animal-card-text{
     padding: 1em 1.5rem;
-    text-align: left;
 }
 
 .animal-card-text h1{
@@ -123,18 +122,17 @@ main article {
   text-decoration:none;
   display: inline-block;
   padding: 1rem 2rem;
-  border-radius: 1rem;
-  transition: transform 1s ease-in-out; 
+  border-radius: 1rem; 
 }
 
 .animal-card-text:hover a:link, a:visited {
   background: linear-gradient(to right, red, orange);
   cursor: no-drop;
-  transform: rotate(20deg) scale(10);
 }
 
 .animal-card-photo{
     min-width: 13rem;
+    flex-basis: 13rem;
     overflow: hidden;
 }
 
@@ -146,5 +144,5 @@ main article {
 }
 
 main article:hover img{
-    transform: rotate(20deg) scale(10);
+    transform: rotate(2000deg) scale(10);
 }

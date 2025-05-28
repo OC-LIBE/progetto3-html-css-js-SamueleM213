@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adotta sorci</title>
     <link href="styles.css" rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
 <body>
 <header class="titoli">
@@ -18,50 +19,48 @@
     <button>Show Dogs</button>
 </nav>
 <main>
-<article>
-    <section class="animal-card-text">
-        <h1>Tung Tung Tung Tung Tung Tung Sahur</h1>
-        <small>
-            <span>1425 years old</span>
-            <span> - </span> 
-            <span>Stick</span>
-        </small>
-        <p>
-            Tung tung tung tung tung tung tung tung tung sahur. A terrifying anomaly that only comes out at Sahoor. It is said that if someone is called for Sahoor three times and does not answer, then this creature comes to your house. Ooh, so scary! This tung tung usually makes a sound like a gong hitting a baton; Tung tung tung tung. Share it with your friends who find it difficult to wake up for Sahoor.
-        </p>
-        <a class="adopt-button" href="https://www.youtube.com/shorts/nYx-2PbomEY" 
-        target="_blank">
-            Adotta Tung Tung Tung Tung Tung Tung Sahur
-        </a>
-    </section>
-    <section class="animal-card-photo">
-        <img src ="static/Tung.jpg">
-    </section>
-</article>
-
+    <template id="animal-card-template">
+        <article>
+            <section class="animal-card-text">
+                <h1 class="name">Tung Tung Tung Tung Tung Tung Sahur</h1>
+                <small>
+                    <span class="age">1425 years old</span>
+                    <span> - </span> 
+                    <span class="race">Stick</span>
+                </small>
+                <p class="desc">    
+                    "Tung, tung, tung, tung, tung, tung, tung, tung, tung, sahur." Anomali mengerikan yang hanya keluar pada sahur, konon katanya kalau ada orang yang dipanggil sahur tiga kali dan tidak nyaut, maka makhluk ini datang di rumah kalian. Hiii, seremnya! Tung Tung ini biasanya bersuara layaknya pukulan kentungan seperti ini, "tung, tung, tung, tung, tung, tung, tung" Share ke teman kalian yang susah sahur.
+                </p>
+                <a class="adopt-button" href="https://www.youtube.com/shorts/nYx-2PbomEY" 
+                target="_blank">
+                    Adotta Tung Tung Tung Tung Tung Tung Sahur
+                </a>
+            </section>
+            <section class="animal-card-photo">
+                <img src ="static/Tung.jpg">
+            </section>
+        </article>
+    </template>
 <article>
     <section class="animal-card-text">
         <h1>Špijuniro Golubiro</h1>
         <small>
             <span>25 years old</span>
             <span> - </span> 
-            <span>Stick</span>
+            <span>FBI agent</span>
         </small>
         <p>
-            Tung tung tung tung tung tung tung tung tung sahur. A terrifying anomaly that only comes out at Sahoor. It is said that if someone is called for Sahoor three times and does not answer, then this creature comes to your house. Ooh, so scary! This tung tung usually makes a sound like a gong hitting a baton; Tung tung tung tung. Share it with your friends who find it difficult to wake up for Sahoor.
+            Jebeni golub kojeg šalje vlada u javnost da špijunira ljude. Mislite da vas još nije našao? Bolje vam je da se odmah idete sakriti ispod svoje male, slatke, mekane dekice.
         </p>
-        <a class="adopt-button" href="https://www.youtube.com/shorts/nYx-2PbomEY" 
+        <a class="adopt-button" href="https://www.youtube.com/shorts/85Buz5J5ZMI" 
         target="_blank">
-            Adotta Tung Tung Tung Tung Tung Tung Sahur
+            Adotta Špijuniro
         </a>
     </section>
     <section class="animal-card-photo">
-        <img src ="static/Tung.jpg">
+        <img src ="static/Spiuniro.webp">
     </section>
 </article>
-<p>Questo è un sito per adottare sorci</p>
-<p>BOmBoclAtt</p>
 </main>
-
 </body>
 </html>
