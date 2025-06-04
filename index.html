@@ -13,10 +13,10 @@
     <h2>Our friends need a home!</h2>
 </header>
 <nav>
-    <button>Show all</button>
-    <button>Show Humans</button>
-    <button>Show Cats</button>
-    <button>Show Dogs</button>
+    <button onclick="filterSelection('all')">Show all</button>
+    <button onclick="filterSelection('rabbit')">Show Rabbits</button>
+    <button onclick="filterSelection('cat')">Show Cats</button>
+    <button onclick="filterSelection('dog')">Show Dogs</button>
 </nav>
 <main>
     <template id="animal-card-template">
@@ -29,7 +29,7 @@
                     <span class="race">Stick</span>
                 </small>
                 <p class="desc">    
-                    "Tung, tung, tung, tung, tung, tung, tung, tung, tung, sahur." Anomali mengerikan yang hanya keluar pada sahur, konon katanya kalau ada orang yang dipanggil sahur tiga kali dan tidak nyaut, maka makhluk ini datang di rumah kalian. Hiii, seremnya! Tung Tung ini biasanya bersuara layaknya pukulan kentungan seperti ini, "tung, tung, tung, tung, tung, tung, tung" Share ke teman kalian yang susah sahur.
+                    "Tung, tung, tung, tung, tung, tung, tung, tung, tung, sahur."
                 </p>
                 <a class="adopt-button" href="https://www.youtube.com/shorts/nYx-2PbomEY" 
                 target="_blank">
@@ -41,26 +41,6 @@
             </section>
         </article>
     </template>
-<article>
-    <section class="animal-card-text">
-        <h1>Špijuniro Golubiro</h1>
-        <small>
-            <span>25 years old</span>
-            <span> - </span> 
-            <span>FBI agent</span>
-        </small>
-        <p>
-            Jebeni golub kojeg šalje vlada u javnost da špijunira ljude. Mislite da vas još nije našao? Bolje vam je da se odmah idete sakriti ispod svoje male, slatke, mekane dekice.
-        </p>
-        <a class="adopt-button" href="https://www.youtube.com/shorts/85Buz5J5ZMI" 
-        target="_blank">
-            Adotta Špijuniro
-        </a>
-    </section>
-    <section class="animal-card-photo">
-        <img src ="static/Spiuniro.webp">
-    </section>
-</article>
 </main>
 </body>
 </html>

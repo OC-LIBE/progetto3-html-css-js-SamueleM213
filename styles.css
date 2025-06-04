@@ -144,5 +144,5 @@ main article {
 }
 
 main article:hover img{
-    transform: rotate(2000deg) scale(10);
+    transform: rotate(20deg) scale(1.5);
 }

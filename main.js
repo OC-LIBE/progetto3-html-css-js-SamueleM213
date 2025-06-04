@@ -6,6 +6,10 @@ async function getPetsData() {
     return petsdata;
 }
 
+function Capitalize(race){
+    return race[0].toUpperCase() + race.slice(1)
+}
+
 async function displayPets(){
     const pets = await getPetsData(); 
     const template = document.querySelector("#animal-card-template");
@@ -16,20 +20,38 @@ async function displayPets(){
     
     const image = clone.querySelector(".animal-card-photo img")
     image.src = pet.photo;
-     const name = clone.querySelector(".name")
-     name.textContent = pet.name
-     const age = clone.querySelector(".age")
-     age.textContent = toString(2025 - Number(pet.birthYear))
-     const race = clone.querySelector(".race")
-     race.textContent = pet.species
-     const desc = clone.querySelector(".desc")
-     desc.textContent = pet.description
-    
+    const name = clone.querySelector(".name")
+    name.textContent = pet.name
+    const age = clone.querySelector(".age")
+    anni = eta(pet.birthYear)
+    if (anni == 0){
+        age.textContent = "Newborn"
+    } 
+    else if(anni == 1){
+        age.textContent = anni + " year old"
+    }
+    else{
+        age.textContent = anni + " years old"
+    }
+    const race = clone.querySelector(".race")
+    race.textContent = Capitalize(pet.species)
+    const desc = clone.querySelector(".desc")
+    desc.textContent = pet.description
+    const button = clone.querySelector(".adopt-button")
+    button.textContent = "Adotta " + pet.name
+    button.setAttribute("href", `${website}/pets/${pet.id}/`)
+
     //aggiungiamo l'articolo al main
     wrapper.appendChild(clone)
     }
 )
 }
+
+function eta(birthYear){
+    const data = new Date()
+    let CurrentYear = data.getFullYear()
+    return CurrentYear - birthYear 
+    }
 
 displayPets()
 
