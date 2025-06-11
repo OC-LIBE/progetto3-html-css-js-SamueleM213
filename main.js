@@ -55,3 +55,32 @@ function eta(birthYear){
 
 displayPets()
 
+const filterButtons = document.querySelectorAll("nav button")
+
+function displayFilterAnimals(e){
+    let petArticles = document.querySelectorAll("article")
+    for (let index = 0;index < petArticles.length;index++){
+        let petArticle = petArticles[index];
+
+    const small = petArticle.querySelectorAll("animal-card-text small span")
+    if (e.target.dataset.filter =="all") {
+        petArticle.style.display = "flex"
+    }
+    else if (small[1].textContent != e.target.dataset.filter){
+        petArticle.style.display = "none"
+    }
+    else{
+        petArticle.style.display = "flex"
+    }
+    }
+        
+ }
+
+
+
+filterButtons.forEach(button=>{
+    button.addEventListener("click", (e) => {
+    displayFilterAnimals(e)}
+)
+})
+console.log(filterButtons)
