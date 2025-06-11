@@ -3,8 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Adotta sorci</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
 <body>
+<header class="titoli">
+    <h1>Welcome</h1>
+    <h2>Our friends need a home!</h2>
+</header>
+<nav>
+    <button data-filter="all">Show all</button>
+    <button data-filter="Rabbit">Show Rabbits</button>
+    <button data-filter="Cat">Show Cats</button>
+    <button data-filter="Dog">Show Dogs</button>
+</nav>
+<main>
+    <template id="animal-card-template">
+        <article>
+            <section class="animal-card-text">
+                <h1 class="name">Tung Tung Tung Tung Tung Tung Sahur</h1>
+                <small>
+                    <span class="age">1425 years old</span>
+                    <span> - </span> 
+                    <span class="race">Stick</span>
+                </small>
+                <p class="desc">    
+                    "Tung, tung, tung, tung, tung, tung, tung, tung, tung, sahur."
+                </p>
+                <a class="adopt-button" href="https://www.youtube.com/shorts/nYx-2PbomEY" 
+                target="_blank">
+                    Adotta Tung Tung Tung Tung Tung Tung Sahur
+                </a>
+            </section>
+            <section class="animal-card-photo">
+                <img src ="static/Tung.jpg">
+            </section>
+        </article>
+    </template>
+</main>
 </body>
 </html>
